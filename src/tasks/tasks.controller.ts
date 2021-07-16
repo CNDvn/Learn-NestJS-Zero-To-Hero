@@ -30,10 +30,10 @@ export class TasksController {
     return this.tasksService.getTaskById(id);
   }
 
-  // @Delete('/:id')
-  // deleteTask(@Param('id') id: string){
-  //   return this.tasksService.deleteTask(id);
-  // }
+  @Delete('/:id')
+  deleteTask(@Param('id') id: string){
+    return this.tasksService.deleteTask(id);
+  }
 
   // @Patch('/:id/status')
   // updateTaskStatus(
